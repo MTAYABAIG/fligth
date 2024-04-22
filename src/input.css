@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,600;1,300&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.size{
+    font-family: 'Poppins';
+}
+
+.btn{
+    @apply text-base leading-6 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg  px-5 py-2 text-center mr-3 md:mr-0 ;
+}
+
+@media only screen and (max-width: 352px) {
+
+.btn{
+    @apply text-sm leading-4 font-medium not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg  px-2 py-2 text-center mr-0 ;
+}
+#btn1{
+    @apply text-sm font-medium mr-0 px-2 py-0 ;
+}
+}
+
+/* section 2  */
+ @media only screen and (min-width: 638px) and  (max-width: 940px) { 
+    .one{
+        @apply w-24 ;
+    } 
+}
+ @media only screen and (min-width: 930px) and  (max-width: 1015px) { 
+    .one{
+        @apply w-24 ;
+    } 
+}
+

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- css -->
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- for icons -->
+
+    <title>Flux</title>
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div class="bg-gray-50">
+        <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0  ">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./img/logo.png" class=" mr-1 sm:h-9" alt="Flowbite Logo">
+
+                    <span class="self-center text-2xl font-bold whitespace-nowrap text-black">Flex</span>
+                </a>
+                <div class="flex md:order-2">
+                    <button type="button" id="btn1"
+                        class="text-base leading-6 text-gray-500 font-semibold not-italic  focus:ring-4 focus:outline-none focus:ring-[#22C55E]   rounded-lg   px-5 py-2.5 text-center mr-3 md:mr-0 ">Login</button>
+                    <button type="button" class="btn">Sign Up</button>
+                    <button for="" class="inline-flex items-center p-2 text-3xl text-gray-900 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-default " id="icon">&#9776;</button>
+
+                    <!-- <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button> -->
+                </div>
+                <div class="items-center justify-between  relative -top-full text-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky"  >
+                    <ul
+                        class="flex flex-col p-4  mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3  pr-4 text-base leading-6 text-gray-500 font-semibold not-italic rounded md:p-0 ">Product</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3  pr-4 text-base leading-6 text-gray-500 font-semibold not-italic rounded md:p-0 ">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-base leading-6 text-gray-500 font-semibold not-italic rounded md:p-0 ">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3  pr-4 text-base leading-6 text-gray-500 font-semibold not-italic rounded md:p-0 ">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- section-1 (header) -->
+        <div class="bg-gray-50">
+            <div class="bg-gray-900 w-4/5 mx-auto h-fit rounded-3xl ">
+
+
+                <div class="relative">
+                    <img src="./img/Frame 14.png" class="absolute w-1/5 md:w-28 lg:w-fit left-2 top-2" alt="photo">
+
+
+                    <img src="./img/Frame.png"
+                        class="absolute w-1/5 md:w-28 lg:w-fit right-2 img top-2 md:right-2 md:top-2" alt="photo">
+
+                </div>
+
+
+                <div class="w-[80%] mx-auto md:h-fit  flex justify-center items-center rounded-3xl ">
+
+                    <div>
+                        <div class="w-16 mx-auto  my-10">
+                            <button type="button"
+                                class="text-white bg-[#22C55E] font-semibold text-xs px-2 py-1 text-center rounded-lg uppercase">Header</button>
+                        </div>
+                        <div>
+                            <h1
+                                class="text-white size text-center w-4/5 sm:w-3/5 md:w-11/12 my-8 mx-auto text-3xl sm:text-4xl md:text-6xl font-bold leading-[62px]">
+                                A
+                                small
+                                business
+                                is only as good as its tools. </h1>
+                            <p
+                                class="text-gray-400 font-semibold text-xl leading-7 w-4/5 sm:w-3/4 md:w-4/5 mx-auto text-center ">
+                                We’re
+                                different. Flex is the only saas business platform that lets you run your business on
+                                one
+                                platform,
+                                seamlessly across all digital channels.</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+
+                            <div
+                                class="relative  w-4/5 sm:w-fit sm:mx-auto h-fit flex px-2 mx-auto my-5  justify-center ">
+                                <div class="flex flex-col lg:flex-row justify-center items-center ">
+                                    <div class="mx-2">
+
+                                        <input type="text" id="input-group-1"
+                                            class="bg-gray-50 font-semibold my-2 md:my-3 border-gray-300 text-gray-900 text-sm rounded-lg  block w-[220px] sm:w-[320px] pl-4 sm:pl-5 p-2.5 "
+                                            placeholder="Enter your work mail">
+                                    </div>
+
+                                    <div class="flex justify-center items-center">
+
+
+                                        <button type="button"
+                                            class="text-base leading-4 my-2 md:my-3 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] px-5 rounded-lg py-3 sm:px-5 p-2.5 text-center ">Get
+                                            early access</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="text-gray-400 z-10 font-bold text-sm leading-[30px] w-1/2 mx-auto text-center -mt-5 mb-12 ">
+                                <p>Start your free 14-day trial today, no credit card required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./img/Frame (1).png"
+                        class="absolute   w-1/5 md:w-28 lg:w-fit left-2 bottom-2 md:left-2 md:bottom-2" alt="photo">
+
+
+                    <img src="./img/Frame 17.png" class="absolute z-0 right-2 bottom-2 w-1/5 md:w-28 lg:w-fit "
+                        alt="photo">
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- section 2 (brands) -->
+        <div>
+            <div class="bg-gray-50 w-full py-16 pb-20 h-fit ">
+                <p class="text-sm text-gray-400 pyu font-bold text-center py-2 leading-6 ">Join 4,000+ companies already
+                    growing
+                </p>
+                <div class="  py-3 w-4/5 mx-auto grid justify-items-center gap-y-5 sm:flex sm:justify-around ">
+                    <img src="./img/Logo (2).png" class="w-36 sm:w-20 md:w-32 lg:w-36 brand" alt="Brand">
+                    <img src="./img/Logo (2a).png" class="w-36 sm:w-20 md:w-32 brand lg:w-36 " alt="Brand">
+                    <img src="./img/Logo (3).png" class="w-36 sm:w-20  md:w-32 lg:w-36 brand " alt="Brand">
+                    <img src="./img/Logo (4).png" class="w-36 sm:w-20 md:w-32 lg:w-36 brand " alt="Brand">
+                    <img src="./img/Logo (5).png" class="w-36 sm:w-20 md:w-32 lg:w-36 brand " alt="Brand">
+                </div>
+            </div>
+            <div>
+                <img src="./img/BG Wave.svg" alt="">
+            </div>
+
+        </div>
+        <!-- section 3 (features) -->
+        <div>
+            <div class="grid justify-items-center my-8 sm:my-10 md:my-20 ">
+                <button type="button"
+                    class="text-white bg-[#22C55E] font-bold text-xs px-2 py-1 text-center rounded-lg uppercase">Features</button>
+                <h1
+                    class=" text-xl mx-8 sm:text-2xl md:text-4xl md:mx-10 text-center text-gray-900 font-bold size leading-10 my-5 ">
+                    Gain more insight into how people use
+                    your</h1>
+                <p
+                    class="text-gray-500 font-semibold text-center text-sm sm:text-md md:text-xl leading-7 w-4/5 sm:w-3/4 md:w-2/3 mx-auto  ">
+                    With our
+                    integrated CRM, project management, collaboration and invoicing capabilities, <br>
+                    you can manage every
+                    aspect of your business in one secure platform.</p>
+            </div>
+            <div>
+                <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-fit mx-auto  ">
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                        <div class=" flex justify-center sm:justify-start ">
+                            <div
+                                class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                
+                            </div>
+                        </div>
+                        <h3
+                            class=" text-base sm:text-xl font-bold text-center my-2 sm:my-5 size text-gray-900 leading-8">
+                            Measure your performance</h3>
+                        <p class=" text-xs sm:text-sm text-center text-gray-500 size font-semibold">Stay connected with
+                            your team
+                            and <br> make quick decisions wherever <br> you are. </p>
+                    </div>
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                        <div class=" flex justify-center sm:justify-start ">
+                            <div
+                                class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                
+                            </div>
+                        </div>
+                        <!-- <img src="./img/Frame 18 (1).png" class="w-12 sm:w-16" alt="Frame"> -->
+                        <h3
+                            class="text-base sm:text-xl font-bold text-center my-2 sm:my-5 size text-gray-900 leading-8">
+                            Custom analytics</h3>
+                        <p class="text-xs sm:text-sm text-center text-gray-500 size font-semibold">Get a complete sales
+                            dashboard in <br> the cloud. See activity, revenue and <br> social metrics all in one place.
+                        </p>
+                    </div>
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                        <img src="./img/Frame 18 (2).png" class="w-12 sm:w-16" alt="Frame">
+                        <h3
+                            class="text-base sm:text-xl font-bold text-center my-2 sm:my-5 size text-gray-900 leading-8">
+                            Team Management</h3>
+                        <p class="text-xs sm:text-sm text-center text-gray-500 size font-semibold">Our calendar lets you
+                            know what is <br> happening with customer and <br> projects so you </p>
+                    </div>
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5">
+                        <div class=" flex justify-center sm:justify-start ">
+                            <div
+                                class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                
+                            </div>
+                        </div>
+                        <h3
+                            class="text-base sm:text-xl font-bold text-center my-2 sm:my-5 size text-gray-900 leading-8">
+                            Build your website</h3>
+                        <p class="text-xs sm:text-sm text-center text-gray-500 size font-semibold">A tool that lets you
+                            build a dream <br> website even if you know nothing <br> about web design or programming.
+                        </p>
+                    </div>
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5">
+                        <div class=" flex justify-center sm:justify-start ">
+                            <div
+                                class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                
+                            </div>
+                        </div>                        <h3 class="text-base sm:text-xl font-bold text-center sm:my-5 size text-gray-900 leading-8">
+                            Connect multiple apps</h3>
+                        <p class="text-xs sm:text-sm text-center text-gray-500 size font-semibold">The first business
+                            platform to bring <br> together all of your products from <br> one place. </p>
+                    </div>
+                    <div class="grid md:w-72 lg:w-80 justify-items-center py-2 m:py-5 smx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                        <div class=" flex justify-center sm:justify-start ">
+                            <div
+                                class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                
+                            </div>
+                        </div>                        <h3
+                            class="text-base sm:text-xl font-bold text-center my-2 sm:my-5 size text-gray-900 leading-8">
+                            Easy setup</h3>
+                        <p class="text-xs sm:text-sm text-center text-gray-500 size font-semibold">End to End Business
+                            Platform, Sales <br> Management, Marketing <br> Automation, Help Desk. </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- section 4 (box) -->
+        <div>
+            <div class="bg-gray-900 grid grid-cols-1 md:grid-cols-2 w-4/5 h-fit mx-auto my-12 md:my-24 rounded-md  ">
+                <div class="w-4/5 mx-auto  my-5 md:ml-14 md:my-8  lg:ml-20 lg:my-10 ">
+                    <h1 class=" text-xl sm:text-2xl lg:text-4xl text-left text-white font-bold size leading-10 my-3 ">
+                        The fastest way from idea to live site. Period.</h1>
+                    <p class="text-gray-400 font-semibold text-xl leading-7 text-left ">
+                        Flex is a Small SaaS Business. Flex isn’t a traditional company.</p>
+                </div>
+                <div class="flex justify-center items-center my-5 ">
+                    <div>
+                        <button type="button"
+                            class="text-sm leading-4 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 text-center mr-3 ">Get
+                            Started</button>
+                        <button type="button" id="btn1"
+                            class="text-sm leading-4 font-bold not-italic text-gray-800 bg-white  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 text-center mr-0">Learn
+                            More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-gray-50 py-5">
+            <!-- section 5(features 2) -->
+            <div class="w-4/5 mx-auto  ">
+                <div class="w-4/5 mx-auto">
+                    <button type="button"
+                        class="text-white bg-[#22C55E] font-bold text-xs px-2 py-1 text-center rounded-lg uppercase">Features</button>
+                    <h1
+                        class=" text-xl sm:text-2xl lg:text-4xl text-left text-gray-900 font-bold size leading-10 my-3 ">
+                        Gain more insight into how people use your.</h1>
+                    <p class="text-gray-500 font-semibold text-left text-sm sm:text-md md:text-xl leading-7   ">
+                        With our
+                        integrated CRM, project management, collaboration and invoicing capabilities, <br>
+                        you can manage every
+                        aspect of your business in one secure platform.</p>
+                </div>
+                <div class="lg:flex justify-evenly my-14 ">
+                    <div
+                        class="grid sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col justify-center items-center lg:w-1/2 ">
+                        <div class=" lg:flex  py-2 md:py-5 mx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <div
+                                    class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                    <i class="bi bi-envelope font-bold text-xl "></i>
+
+                                    <!-- <i class="fa-sharp fa-solid fa-envelopes"></i> -->
+                                </div>
+                            </div>
+                            
+                            <div class="grid justify-items-center sm:justify-items-start mx-2 md:mx-5">
+                                <h3
+                                    class="text-base sm:text-xl font-bold  my-2 sm:my-5 size text-gray-900 leading-8 -center">
+                                    Measure your performance</h3>
+                                <p class="text-xs sm:text-sm  text-gray-500 size font-semibold">Stay connected with your
+                                    team and make quick decisions wherever you are.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:flex  py-2 md:py-5 mx-2 sm:mx-5 mb-4 sm:mb-5  ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <div
+                                    class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                    <i class="bi bi-vector-pen text-xl font-bold"></i>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="grid justify-items-center sm:justify-items-start mx-2 md:mx-5">
+                                <h3 class="text-base sm:text-xl font-bold  my-2 sm:my-5 size text-gray-900 leading-8 -center">
+                                    Build your website</h3>
+                                <p class="text-xs sm:text-sm  text-gray-500 size font-semibold">A tool that lets you
+                                    build a
+                                    dream website even if you know nothing about web design or programming.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:flex  py-2 md:py-5 mx-2 sm:mx-5 mb-4 sm:mb-5 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <div
+                                    class="bg-[#22C55E] w-14 h-14 flex justify-center items-center p-1 sm:p-2 rounded-md text-white font-bold ">
+                                    <i class="bi bi-grid font-bold text-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="grid justify-items-center sm:justify-items-start mx-2 md:mx-5">
+                                <h3 class="text-base sm:text-xl font-bold  my-2 sm:my-5 size text-gray-900 leading-8">
+                                    Connect multiple apps</h3>
+                                <p class="text-xs sm:text-sm  text-gray-500 size font-semibold">The first business
+                                    platform
+                                    to bring together all of your products from one place.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-10 w-11/12 mx-auto ">
+                        <div class="relative">
+                            <img src="./img/Pattern.png"
+                                class="absolute w-1/5 md:w-28 lg:w-fit -left-3.5 -top-3.5 md:-left-11 md:-top-11 "
+                                alt="img">
+                        </div>
+                        <div class="flex justify-center" >
+                            <img src="./img/Image Container.png" class="w-full h-full lg:w-4/5 " alt="img">
+                        </div>
+                        <div class="relative">
+                            <img src="./img/pattern 2.png"
+                                class="absolute z-0 md:-right-7 md:-bottom-7 -right-3.5 -bottom-3.5 w-1/5 md:w-28 lg:w-fit "
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section 6 -->
+            <div class="w-4/5 mx-auto  md:flex md:justify-between my-12 ">
+                <div class="py-10 w-4/5 mx-auto ">
+                    <div class="relative">
+                        <img src="./img/Pattern.png"
+                            class="absolute w-1/5 md:w-28 lg:w-fit -left-3.5 -top-3.5 md:-left-11 md:-top-11 "
+                            alt="img">
+                    </div>
+                    <div class="flex justify-center" >
+                        <img src="./img/Image Container.png" class="w-full h-full lg:w-4/5 " alt="img">
+                    </div>
+                    <div class="relative">
+                        <img src="./img/pattern 2.png"
+                            class="absolute z-0 md:-right-7 md:-bottom-7 -right-3.5 -bottom-3.5 w-1/5 md:w-28 lg:w-fit  lg:right-24"
+                            alt="img">
+                    </div>
+                </div>
+                <div class=" md:w-3/5 flex justify-center w-fit mx-auto items-center pl-10 ">
+                    <div>
+                        <div class="flex justify-center">
+                            <button type="button"
+                                class="text-white bg-[#22C55E]  font-semibold text-xs px-2 py-1 text-center rounded-lg uppercase">Features</button>
+                        </div>
+                        <h1
+                            class=" text-xl sm:text-2xl text-center lg:text-5xl md:text-left text-gray-900 font-bold size leading-10  my-5 md:pl-5 ">
+                            Gain more insight into how people use your.</h1>
+                        <p
+                            class="text-gray-500 text-center font-semibold md:text-left text-sm sm:text-md md:text-xl leading-7  mb-6 md:pl-5">
+                            With our
+                            integrated CRM, project management, collaboration and invoicing capabilities, <br>
+                            you can manage every
+                            aspect of your business in one secure platform.</p>
+                        <div class="flex justify-center">
+                            <button type="button"
+                                class="text-sm leading-4 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 text-center mr-3 mb-5 ">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section 7 -->
+            <div class="w-4/5 mx-auto  md:flex md:justify-around my-12 ">
+
+                <div class=" md:w-3/5 flex justify-center w-fit mx-auto items-center pl-10 ">
+                    <div>
+                        <div class="flex justify-center">
+                            <button type="button"
+                                class="text-white bg-[#22C55E]  font-semibold text-xs px-2 py-1 text-center rounded-lg uppercase">Features</button>
+                        </div>
+                        <h1
+                            class=" text-xl sm:text-2xl text-center lg:text-5xl md:text-left text-gray-900 font-bold size leading-10  my-5 md:mr-7 ">
+                            Gain more insight into how people use your.</h1>
+                        <p
+                            class="text-gray-500 text-center font-semibold md:text-left text-sm sm:text-md md:text-xl leading-7  mb-6 md:mr-5 ">
+                            With our
+                            integrated CRM, project management, collaboration and invoicing capabilities, <br>
+                            you can manage every
+                            aspect of your business in one secure platform.</p>
+                        <div class="flex justify-center">
+                            <button type="button"
+                                class="text-sm leading-4 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 text-center mr-3 mb-5 ">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-10 w-4/5 mx-auto ">
+                    <div class="relative">
+                        <img src="./img/Pattern.png"
+                            class="absolute w-1/5 md:w-28 lg:w-fit -left-3.5 -top-3.5 md:-left-11 md:-top-11 "
+                            alt="img">
+                    </div>
+                    <div>
+                        <img src="./img/Image Container.png" class="w-full h-full lg:w-4/5 " alt="img">
+                    </div>
+                    <div class="relative">
+                        <img src="./img/pattern 2.png"
+                            class="absolute z-0 md:-right-7 lg:right-20 md:-bottom-7 -right-3.5 -bottom-3.5 w-1/5 md:w-28 lg:w-fit "
+                            alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 8 (numbers) -->
+        <div class="pt-10 pb-20">
+            <div class=" w-4/5 mx-auto flex justify-center text-center my-4 sm:my-7 ">
+                <div>
+                    <button type="button"
+                        class="text-white bg-[#22C55E] font-semibold text-[10px] px-2 py-0.5 text-center rounded-lg uppercase">Numbers</button>
+                    <h1
+                        class=" text-xl sm:text-2xl md:text-3xl size lg:text-5xl text-center sm:text-left text-gray-900 font-bold size leading-10 my-5 ">
+                        We believe in the power of data</h1>
+                    <p
+                        class="text-gray-500 font-semibold text-center sm:text-left  text-xs  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                        Flex is the only business platform that lets you run your business on one platform, seamlessly
+                        across all digital channels.</p>
+                </div>
+            </div>
+            <div
+                class=" md:my-16 w-4/5 mx-auto lg:flex md:justify-evenly grid justify-center grid-cols-2 sm:justify-items-center ">
+                <div>
+                    <h1
+                        class=" text-3xl sm:text-4xl md:text-5xl text-center md:text-left font-semibold md:font-bold text-[#22C55E] ">
+                        235.000</h1>
+                    <p
+                        class="text-gray-500 font-semibold text-center sm:text-left  text-xs  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                        Projects completed</p>
+                </div>
+                <div>
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-5xl text-center md:text-left font-semibold md:font-bold text-[#22C55E] ">
+                        $10m</h1>
+                    <p
+                        class="text-gray-500 font-semibold text-center sm:text-left  text-xs  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4">
+                        ARP</p>
+                </div>
+                <div>
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-5xl text-center md:text-left font-semibold md:font-bold text-[#22C55E]  ">
+                        +50.000</h1>
+                    <p
+                        class="text-gray-500 font-semibold text-center sm:text-left  text-xs  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                        Hours Saved Annually</p>
+                </div>
+                <div>
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-5xl text-center md:text-left font-semibold md:font-bold text-[#22C55E]  ">
+                        3.500</h1>
+                    <p
+                        class="text-gray-500 font-semibold text-center sm:text-left  text-xs  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                        Unique Users</p>
+                </div>
+            </div>
+        </div>
+        <!-- section 9 (video) -->
+        <div>
+            <div class=" ">
+                <!-- upper curve -->
+                <div>
+                    <img src="./img/BG Wave.png" class="text-gray-900" alt="">
+                </div>
+                <!-- main content -->
+                <div class="bg-[#2A3342] py-5 ">
+                    <div class="grid lg:flex w-4/5 h-auto mx-auto md:justify-between">
+                        <div
+                            class="flex justify-center items-center md:justify-start text-center w-11/12 mx-auto lg:w-1/2 md:text-left  ">
+                            <div class=" md:ml-5 ">
+                                <button type="button"
+                                    class="text-gray-800 bg-[#DCFCE7] font-medium md:font-semibold text-xs px-2 py-1 text-center mt-4 rounded-lg uppercase">How
+                                    it works</button>
+                                <h1
+                                    class=" text-xl sm:text-2xl size md:text-4xl lg:text-5xl  text-white font-bold size leading-10 mt-7 mb-10 ">
+                                    Gain more insight into how people use.</h1>
+                                <p
+                                    class="text-gray-500 font-semibold  text-xs md:w-4/5 sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                    With our integrated CRM, project management, collaboration and invoicing
+                                    capabilities, you can manage your business in one secure platform.</p>
+
+                            </div>
+                        </div>
+                        <!-- Video session -->
+                        <div class="flex justify-center my-5 w-full mx-auto lg:w-1/2">
+                            <iframe class="w-4/5 sm:w-11/12 h-96  lg:w-[500px] lg:h-[315px] rounded-3xl "
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="w-4/5  mx-auto md:w-10/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 ">
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    1</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto  sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Measure your performance</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">Stay connected with your
+                                    team
+                                    and make quick decisions wherever you are.</p>
+                            </div>
+                        </div>
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    2</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto  sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Custom analytics</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">Get a complete sales
+                                    dashboard in the cloud. See activity, revenue and social metrics all in one place.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    3</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto  sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Team Management</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">Our calendar lets you know
+                                    what is happening with customer and projects so you</p>
+                            </div>
+                        </div>
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    4</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto  sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Build your website</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">A tool that lets you build
+                                    a dream website even if you know nothing about web design or programming.</p>
+                            </div>
+                        </div>
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    5</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto  sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Connect multiple apps</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">The first business
+                                    platform to bring together all of your products from one place.</p>
+                            </div>
+                        </div>
+                        <div class="w-4/5 mx-auto text-center sm:text-left my-4 sm:my-7 ">
+                            <div class=" flex justify-center sm:justify-start ">
+                                <p
+                                    class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1 sm:p-2 rounded-full text-gray-900 font-bold ">
+                                    6</p>
+                            </div>
+                            <div class="my-3 w-4/5 mx-auto sm:w-fit ">
+                                <h1 class="text-xl font-bold text-gray-50 my-2">Easy setup</h1>
+                                <p class="text-sm font-semibold size leading-6 text-gray-500">End to End Business
+                                    Platform, Sales Management, Marketing Automation, Help Desk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- lower curve -->
+                <div>
+                    <img src="./img/BG Wave (1).png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- section10 -->
+        <div>
+            <div class="my-20 mb-40" >
+                <div class="flex justify-center">
+                    <button type="button"
+                        class="text-white bg-[#22C55E] font-semibold text-[10px] px-2 py-0.5 text-center rounded-lg uppercase">Application</button>
+                </div>
+                <div>
+                    <h1
+                        class=" text-xl sm:text-2xl md:text-3xl size lg:text-5xl text-center text-gray-900 font-bold size leading-10 my-5 ">
+                        Great work starts with your app</h1>
+                </div>
+                <iv>
+                    
+                        <div class="grid grid-cols-1 justify-items-center border"  >
+                            <div>
+                            <div class="relative z-10  hidden lg:block">
+                                <img src="./img/Frame 14 (1).png" class="absolute md:w-44 -left-10 top-36 " alt="">
+                            </div>
+
+                            <div class=" relative z-10 bg-gray-300  w-11/12 mx-auto rounded-tl-xl rounded-tr-xl "  >
+                                <img src="./img/PUT ARTWORK HERE.png" class="rounded-2xl w-auto pt-2 px-2 sm:pt-4 sm:px-4 md:pt-5 md:px-5 " alt="graphs">
+                            </div>
+
+                             <div class="relative z-1 hidden lg:block">
+                                <img src="./img/Frame 33.png" class="absolute w-5 right-0 bottom-10 sm:w-20  md:w-28  md:-right-12 md:bottom-40 " alt=""> 
+
+                        </div>
+                    </div>
+                    
+                    <div class=" relative z-0  md:-mt-0.5">
+                        <div class="flex justify-center">
+                            <img src="./img/Shape 2 copy 2.png" class="w-32  " alt="gray">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./img/Shape 3 copy 2.png" class="" alt="gray">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center w-4/5 mx-auto text-center my-2">
+                        <p
+                            class="text-gray-500 font-semibold  text-xs md:w-4/5 sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                            Our philosophy is simple — hire a team of diverse, passionate people and foster a culture
+                            that empowers you to do you best work.</p>
+                    </div>
+                    <div class="flex justify-center items-center my-5 ">
+                        <div>
+                            <button type="button"
+                                class="text-sm leading-4 font-semibold not-italic text-white bg-[#22C55E]  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 md:py-4 text-center mr-3 ">Learn
+                                More</button>
+                            <button type="button" id="btn1"
+                                class="text-sm leading-4 font-bold not-italic text-gray-800 bg-white  focus:ring-4 focus:outline-none focus:ring-[#556987] rounded-lg w-28 py-2 sm:w-32 sm:py-2.5 text-center md:py-4 mr-0 border  ">About
+                                Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- secton 11 -->
+        <div class="mt-10 mb-[150px] md:mb-[300px]">
+            <div class=" w-4/5 mx-auto flex justify-center  my-4 sm:my-7">
+                <div>
+                    <div class="flex justify-center">
+                        <button type="button"
+                            class="text-white bg-[#22C55E] font-semibold text-[10px] px-2 py-0.5 text-center rounded-lg uppercase">Contacts</button>
+                    </div>
+                    <h1
+                        class=" text-xl sm:text-2xl md:text-3xl size lg:text-5xl text-center text-gray-900 font-bold size leading-10 my-5 ">
+                        Let’s stay connected</h1>
+                    <p
+                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                        It's never been easier to get in touch with Flex. Call us, use our live chat widget or email and
+                        we'll get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div
+                class=" md:my-16 w-4/5 mx-auto  grid justify-center grid-cols-1 sm:grid-cols-3 sm:justify-items-center ">
+                <!-- 1 -->
+                <div class="my-2">
+                    <div class="flex justify-center my-2">
+                        <p
+                            class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1.5  rounded-full text-gray-900 font-bold ">
+                            <i class="bi bi-envelope-open font-bold text-xl  text-white"></i>
+
+                        </p>
+                    </div>
+                    <h1 class=" text-2xl  md:text-3xl text-center font-semibold md:font-bold text-gray-900  my-2">
+                        Email</h1>
+                    <p
+                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  ">
+                        contact@flex.co</p>
+                </div>
+                <!-- 2 -->
+                <div class="my-2">
+                    <div class="flex justify-center my-2">
+                        <p
+                            class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1.5  rounded-full text-gray-900 font-bold ">
+                            <i class="fa-sharp fa-solid fa-phone-volume text-xl font-bold text-white"></i>
+
+                        </p>
+                    </div>
+                    <h1 class=" text-2xl  md:text-3xl text-center font-semibold md:font-bold text-gray-900  my-2">
+                        Phone</h1>
+                    <p
+                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  ">
+                        contact@flex.co</p>
+                </div>
+                <!-- 3 -->
+                <div class="my-2">
+                    <div class="flex justify-center my-2">
+                        <p
+                            class="bg-[#22C55E] w-12 h-12 flex justify-center items-center p-1  rounded-full text-gray-900 font-bold ">
+                            <i class="bi bi-grid-3x3 font-bold text-xl text-white"></i>
+
+                        </p>
+                    </div>
+                    <h1 class=" text-2xl  md:text-3xl text-center font-semibold md:font-bold text-gray-900  my-2">
+                        Social</h1>
+                    <p
+                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  ">
+                        contact@flex.co</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <div>
+            <div class="bg-[#2A3342]  w-full h-full">
+                <div class="flex justify-center md:my-40 my-20 ">
+                    <iframe class="w-4/5  h-80  md:h-[541px] -mt-[160px] md:-mt-[272.5px] rounded-md"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13610.129622513039!2d73.1231582!3d31.4820466!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1677317148102!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div class="flex justify-center">
+                        <img src="./img/Logo end.png" alt="">
+                    </div>
+                    <div class="flex justify-center">
+                        <ul class=" grid sm:flex  sm:space-x-14 my-5 ">
+                            <li>
+                                <a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs md:text-base text-center  sm:text-sm  leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Product</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Features</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Pricing</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Resources</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Careers</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Help</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <p
+                                        class="text-gray-500 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                                        Privacy</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Pt-5 pb-10 border border-y border-gray-600">
+                        <p
+                            class="text-gray-400 font-semibold w-4/5 mx-auto text-xs text-center  sm:text-sm md:text-base leading-7  my-1 sm:my-2 md:my-4 ">
+                            &copy;2023 Flex. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
